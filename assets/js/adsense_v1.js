@@ -21,7 +21,7 @@ window.addEventListener("load", (event) => {
         j=document.createElement("script");
         j.async= true;
         j.crossorigin= "anonymous";
-        j.src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5305579698272359";
+        j.src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8041377146207222";
         f.parentNode.insertBefore(j,f);
     }
 

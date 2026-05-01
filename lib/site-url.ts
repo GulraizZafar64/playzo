@@ -10,17 +10,15 @@ export function getSiteUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (explicit) return trim(explicit);
 
-  const production = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
-  if (production) {
-    const host = production.replace(/^https?:\/\//i, "").split("/")[0];
-    return trim(`https://${host}`);
+  // If this is a preview deployment on Vercel, use the preview URL
+  if (process.env.VERCEL_ENV === "preview") {
+    const vercel = process.env.VERCEL_URL?.trim();
+    if (vercel) {
+      const host = vercel.replace(/^https?:\/\//i, "").split("/")[0];
+      return trim(`https://${host}`);
+    }
   }
 
-  const vercel = process.env.VERCEL_URL?.trim();
-  if (vercel) {
-    const host = vercel.replace(/^https?:\/\//i, "").split("/")[0];
-    return trim(`https://${host}`);
-  }
-
+  // Always use the primary domain for production (and local dev if NEXT_PUBLIC_SITE_URL isn't set)
   return "https://playzo.space";
 }

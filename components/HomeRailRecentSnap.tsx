@@ -21,26 +21,26 @@ export default function HomeRailRecentSnap() {
   if (recent.length === 0) return null;
 
   return (
-    <div className="playverse-rail-recent" aria-labelledby="playverse-rail-recent-title">
-      <div className="playverse-rail-recent-head">
-        <h3 id="playverse-rail-recent-title" className="playverse-rail-recent-title">
+    <div className="playzo-rail-recent" aria-labelledby="playzo-rail-recent-title">
+      <div className="playzo-rail-recent-head">
+        <h3 id="playzo-rail-recent-title" className="playzo-rail-recent-title">
           <i className="fa fa-history" aria-hidden />
           Recent
         </h3>
       </div>
-      <div className="playverse-rail-recent-track" role="list">
+      <div className="playzo-rail-recent-track" role="list">
         {recent.map((g) => (
           <Link
             key={g.slug}
             href={`/game/${g.slug}`}
-            className="playverse-rail-recent-card"
+            className="playzo-rail-recent-card"
             role="listitem"
             prefetch
           >
-            <span className="playverse-rail-recent-thumb">
+            <span className="playzo-rail-recent-thumb">
               <img src={g.thumb ?? "/assets/img/logo.png"} alt="" width={48} height={48} loading="lazy" />
             </span>
-            <span className="playverse-rail-recent-name">{g.name}</span>
+            <span className="playzo-rail-recent-name">{g.name}</span>
           </Link>
         ))}
       </div>

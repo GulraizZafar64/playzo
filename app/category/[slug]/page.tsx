@@ -37,7 +37,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const categoryEditorial = buildCategoryEditorial(label, SITE_NAME);
 
   return (
-    <div className="container-fluid px-2 px-sm-3 py-3 playverse-page category-page">
+    <div className="container-fluid px-2 px-sm-3 py-3 playzo-page category-page">
       <nav className="category-page-breadcrumb" aria-label="Breadcrumb">
         <Link href="/">Home</Link>
         <span className="category-page-bc-sep" aria-hidden>

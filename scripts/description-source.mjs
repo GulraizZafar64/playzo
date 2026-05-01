@@ -3,7 +3,7 @@
  */
 import { normalizeLegacyBrand } from "./brand-normalize.mjs";
 
-export const REMOTE_GAME_PAGE_BASE = "https://classroom-6x-online.github.io/game";
+export const REMOTE_GAME_PAGE_BASE = "https://playzo.space/game";
 
 export function decodeHtmlEntities(s) {
   if (!s) return s;
@@ -47,7 +47,7 @@ export async function fetchGameDescriptionFromRemote(slug, signal) {
     signal,
     headers: {
       Accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
-      "User-Agent": "PlayverseCatalog/1.0 (+https://playverses.vercel.app)",
+      "User-Agent": "PlayzoCatalog/1.0 (+https://playzos.vercel.app)",
     },
     redirect: "follow",
   });

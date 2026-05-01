@@ -73,7 +73,7 @@ export default function SearchModalContent() {
 
   return (
     <>
-      <div className="search-container app-search playverse-search playverse-search--modal w-100">
+      <div className="search-container app-search playzo-search playzo-search--modal w-100">
         <input
           type="text"
           id="search-input"
@@ -89,26 +89,26 @@ export default function SearchModalContent() {
       </div>
 
       {query.trim().length > 0 && results.length > 0 && (
-        <ul className="playverse-search-suggest list-unstyled mb-0 mt-2" role="listbox" aria-label="Matching games">
+        <ul className="playzo-search-suggest list-unstyled mb-0 mt-2" role="listbox" aria-label="Matching games">
           {results.map((g) => (
             <li key={g.slug} role="option">
               <Link
                 href={`/game/${g.slug}`}
-                className="playverse-search-suggest-link"
+                className="playzo-search-suggest-link"
                 prefetch={false}
                 onClick={onPick}
               >
-                <span className="playverse-search-suggest-thumb">
+                <span className="playzo-search-suggest-thumb">
                   <img src={g.thumb ?? "/assets/img/logo.png"} alt="" width={44} height={44} loading="lazy" decoding="async" />
                 </span>
-                <span className="playverse-search-suggest-name">{g.name || g.title}</span>
+                <span className="playzo-search-suggest-name">{g.name || g.title}</span>
               </Link>
             </li>
           ))}
         </ul>
       )}
 
-      <p className="playverse-search-modal-hint mb-0 mt-2 small">
+      <p className="playzo-search-modal-hint mb-0 mt-2 small">
         {games.length === 0
           ? "Loading catalog…"
           : query.trim() === ""

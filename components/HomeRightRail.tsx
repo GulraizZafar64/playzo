@@ -20,61 +20,61 @@ export default function HomeRightRail({ games }: Props) {
   }, [games]);
 
   return (
-    <aside className="playverse-rail" aria-label="Promotions and trending games">
-      <div className="playverse-promo playverse-promo--trophy">
-        <p className="playverse-promo-adlabel">Advertisement</p>
-        <h3 className="playverse-promo-title">
-          Want to be <span className="playverse-promo-em">the best?</span>
+    <aside className="playzo-rail" aria-label="Promotions and trending games">
+      <div className="playzo-promo playzo-promo--trophy">
+        <p className="playzo-promo-adlabel">Advertisement</p>
+        <h3 className="playzo-promo-title">
+          Want to be <span className="playzo-promo-em">the best?</span>
         </h3>
-        <p className="playverse-promo-text">
+        <p className="playzo-promo-text">
           See how search, categories, and instant play work — then jump into {PUBLIC_CATALOG_SIZE_LABEL} titles.
         </p>
-        <Link href="/learn-more" className="playverse-promo-btn">
+        <Link href="/learn-more" className="playzo-promo-btn">
           Learn more
         </Link>
-        <span className="playverse-promo-icon" aria-hidden>
+        <span className="playzo-promo-icon" aria-hidden>
           <i className="fa fa-trophy" />
         </span>
       </div>
 
       <HomeRailRecentSnap />
 
-      <div className="playverse-trending-panel">
-        <div className="playverse-trending-top">
-          <h3 className="playverse-trending-heading">Trending now</h3>
-          <Link href="/category/trending" className="playverse-trending-viewall">
+      <div className="playzo-trending-panel">
+        <div className="playzo-trending-top">
+          <h3 className="playzo-trending-heading">Trending now</h3>
+          <Link href="/category/trending" className="playzo-trending-viewall">
             View all
           </Link>
         </div>
-        <ol className="playverse-trending-list">
+        <ol className="playzo-trending-list">
           {trending.map((g, i) => (
             <li key={g.slug}>
-              <Link href={`/game/${g.slug}`} className="playverse-trending-row">
-                <span className={`playverse-trending-rank ${i < 3 ? "playverse-trending-rank--top" : ""}`}>
+              <Link href={`/game/${g.slug}`} className="playzo-trending-row">
+                <span className={`playzo-trending-rank ${i < 3 ? "playzo-trending-rank--top" : ""}`}>
                   {i + 1}
                 </span>
-                <div className="playverse-trending-thumb">
+                <div className="playzo-trending-thumb">
                   <img src={g.thumb ?? "/assets/img/logo.png"} alt="" loading="lazy" decoding="async" />
                 </div>
-                <span className="playverse-trending-name">{g.name}</span>
+                <span className="playzo-trending-name">{g.name}</span>
               </Link>
             </li>
           ))}
         </ol>
       </div>
 
-      <div className="playverse-promo playverse-promo--pad">
-        <p className="playverse-promo-adlabel">Advertisement</p>
-        <h3 className="playverse-promo-title">
-          Level up your <span className="playverse-promo-em">skills!</span>
+      <div className="playzo-promo playzo-promo--pad">
+        <p className="playzo-promo-adlabel">Advertisement</p>
+        <h3 className="playzo-promo-title">
+          Level up your <span className="playzo-promo-em">skills!</span>
         </h3>
-        <p className="playverse-promo-text">
+        <p className="playzo-promo-text">
           New games weekly. Bookmarks, categories, and one-click play — built for quick breaks.
         </p>
-        <Link href="/learn-more#play" className="playverse-promo-btn playverse-promo-btn--alt">
+        <Link href="/learn-more#play" className="playzo-promo-btn playzo-promo-btn--alt">
           Join now
         </Link>
-        <span className="playverse-promo-icon playverse-promo-icon--pad" aria-hidden>
+        <span className="playzo-promo-icon playzo-promo-icon--pad" aria-hidden>
           <i className="fa fa-gamepad" />
         </span>
       </div>

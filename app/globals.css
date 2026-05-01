@@ -1,6 +1,6 @@
 /* Styles load from /assets/css/styles.css */
 
-/* —— playverse-style theme: purple accent + light/dark via data-theme —— */
+/* —— playzo-style theme: purple accent + light/dark via data-theme —— */
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
@@ -89,27 +89,27 @@ body {
   flex: 1;
 }
 
-/* —— playverse layout: sidebar + main + mobile bottom nav —— */
+/* —— playzo layout: sidebar + main + mobile bottom nav —— */
 
-.playverse-root {
+.playzo-root {
   display: block;
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
   background: var(--app-bg);
-  --playverse-sidebar-w: 260px;
-  /* Mobile bottom dock — keep in sync with .playverse-bottom-nav height + safe area */
-  --playverse-bottom-nav-h: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+  --playzo-sidebar-w: 260px;
+  /* Mobile bottom dock — keep in sync with .playzo-bottom-nav height + safe area */
+  --playzo-bottom-nav-h: calc(4.25rem + env(safe-area-inset-bottom, 0px));
   /* Sticky header stack: topbar, then category strip (used by rail + scroll offset) */
-  --playverse-topbar-h: 3.65rem;
-  --playverse-category-bar-h: 3.5rem;
-  --playverse-sticky-top: calc(var(--playverse-topbar-h) + var(--playverse-category-bar-h));
+  --playzo-topbar-h: 3.65rem;
+  --playzo-category-bar-h: 3.5rem;
+  --playzo-sticky-top: calc(var(--playzo-topbar-h) + var(--playzo-category-bar-h));
 }
 
-.playverse-sidebar {
+.playzo-sidebar {
   display: none;
-  width: var(--playverse-sidebar-w);
+  width: var(--playzo-sidebar-w);
   flex-direction: column;
   background: var(--app-surface);
   border-right: 1px solid var(--border-subtle);
@@ -117,13 +117,13 @@ body {
 }
 
 @media (min-width: 992px) {
-  .playverse-sidebar {
+  .playzo-sidebar {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     display: flex;
-    height: calc(100dvh - var(--playverse-bottom-nav-h));
+    height: calc(100dvh - var(--playzo-bottom-nav-h));
     /* height: 10dvh; */
     overflow-y: auto;
     overflow-x: hidden;
@@ -134,15 +134,15 @@ body {
 
 /* xl+ : full-height sidebar; lg–xl : bottom dock visible — shorten sidebar so the dock can span the full width */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .playverse-sidebar {
-    bottom: var(--playverse-bottom-nav-h);
+  .playzo-sidebar {
+    bottom: var(--playzo-bottom-nav-h);
     height: auto;
-    max-height: calc(100dvh - var(--playverse-bottom-nav-h));
+    max-height: calc(100dvh - var(--playzo-bottom-nav-h));
   }
 }
 
 
-.playverse-sidebar-inner {
+.playzo-sidebar-inner {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -150,7 +150,7 @@ body {
   min-height: 100%;
 }
 
-.playverse-logo {
+.playzo-logo {
   display: inline-flex;
   align-items: baseline;
   gap: 0.2rem;
@@ -160,7 +160,7 @@ body {
   letter-spacing: -0.03em;
 }
 
-.playverse-logo-mark {
+.playzo-logo-mark {
   width: 10px;
   height: 10px;
   border-radius: 3px;
@@ -168,25 +168,25 @@ body {
   box-shadow: 0 0 18px var(--accent-glow);
 }
 
-.playverse-logo-text {
+.playzo-logo-text {
   color: var(--ink);
 }
 
-.playverse-logo-accent {
+.playzo-logo-accent {
   color: var(--accent-2);
 }
 
-.playverse-nav-list {
+.playzo-nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.playverse-nav-list li+li {
+.playzo-nav-list li+li {
   margin-top: 0.2rem;
 }
 
-.playverse-nav-heading {
+.playzo-nav-heading {
   margin: 1rem 0 0.5rem;
   font-size: 0.65rem;
   font-weight: 800;
@@ -195,7 +195,7 @@ body {
   color: var(--slate-blue-500);
 }
 
-.playverse-nav-link {
+.playzo-nav-link {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -210,19 +210,19 @@ body {
     color 0.2s ease;
 }
 
-.playverse-nav-link i {
+.playzo-nav-link i {
   width: 1.1rem;
   text-align: center;
   color: var(--accent-2);
   opacity: 0.9;
 }
 
-.playverse-nav-link:hover {
+.playzo-nav-link:hover {
   background: var(--accent-soft);
   color: var(--ink);
 }
 
-.playverse-sidebar-promo {
+.playzo-sidebar-promo {
   margin-top: 10px;
   padding: 1rem;
   border-radius: 12px;
@@ -230,25 +230,25 @@ body {
   border: 1px solid var(--accent-border);
 }
 
-[data-theme="light"] .playverse-sidebar-promo {
+[data-theme="light"] .playzo-sidebar-promo {
   background: linear-gradient(145deg, rgba(123, 63, 228, 0.12) 0%, #f8fafc 100%);
 }
 
-.playverse-sidebar-promo-title {
+.playzo-sidebar-promo-title {
   margin: 0 0 0.35rem;
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--ink);
 }
 
-.playverse-sidebar-promo-text {
+.playzo-sidebar-promo-text {
   margin: 0 0 0.75rem;
   font-size: 0.78rem;
   line-height: 1.4;
   color: var(--slate-blue-600);
 }
 
-.playverse-sidebar-promo-btn {
+.playzo-sidebar-promo-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -268,35 +268,35 @@ body {
     transform 0.2s ease;
 }
 
-.playverse-sidebar-promo-btn:hover {
+.playzo-sidebar-promo-btn:hover {
   filter: brightness(1.06);
   transform: translateY(-1px);
   color: #fff !important;
 }
 
-.playverse-offcanvas {
+.playzo-offcanvas {
   background: var(--app-surface) !important;
   color: var(--ink);
   max-width: min(320px, 92vw);
 }
 
-.playverse-offcanvas .offcanvas-body {
+.playzo-offcanvas .offcanvas-body {
   /* Keep sidebar content above the fixed mobile bottom nav. */
   padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
 }
 
 @media (min-width: 992px) {
-  .playverse-sidebar-inner {
+  .playzo-sidebar-inner {
     padding-bottom: calc(1rem + env(safe-area-inset-bottom));
   }
 }
 
 
-.playverse-offcanvas .offcanvas-title {
+.playzo-offcanvas .offcanvas-title {
   color: var(--ink);
 }
 
-.playverse-main {
+.playzo-main {
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -306,14 +306,14 @@ body {
 }
 
 @media (min-width: 992px) {
-  .playverse-main {
-    margin-left: var(--playverse-sidebar-w);
-    width: calc(100% - var(--playverse-sidebar-w));
-    max-width: calc(100% - var(--playverse-sidebar-w));
+  .playzo-main {
+    margin-left: var(--playzo-sidebar-w);
+    width: calc(100% - var(--playzo-sidebar-w));
+    max-width: calc(100% - var(--playzo-sidebar-w));
   }
 }
 
-.playverse-topbar {
+.playzo-topbar {
   position: sticky;
   top: 0;
   z-index: 1030;
@@ -324,22 +324,22 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
-[data-theme="light"] .playverse-topbar {
+[data-theme="light"] .playzo-topbar {
   background: color-mix(in srgb, #ffffff 92%, transparent);
   box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
 }
 
-.playverse-topbar-inner {
+.playzo-topbar-inner {
   display: flex;
   align-items: center;
   gap: 0.65rem;
   padding: 0.65rem 0.75rem;
   flex-wrap: wrap;
-  min-height: var(--playverse-topbar-h);
+  min-height: var(--playzo-topbar-h);
   box-sizing: border-box;
 }
 
-.playverse-topbar-pages {
+.playzo-topbar-pages {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -354,17 +354,17 @@ body {
   padding-bottom: 0.1rem;
 }
 
-.playverse-topbar-pages::-webkit-scrollbar {
+.playzo-topbar-pages::-webkit-scrollbar {
   height: 4px;
 }
 
-.playverse-topbar-pages::-webkit-scrollbar-thumb {
+.playzo-topbar-pages::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
 @media (min-width: 992px) {
-  .playverse-topbar-pages {
+  .playzo-topbar-pages {
     flex-wrap: wrap;
     overflow-x: visible;
     justify-content: center;
@@ -372,7 +372,7 @@ body {
   }
 }
 
-.playverse-topbar-page-link {
+.playzo-topbar-page-link {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -382,11 +382,11 @@ body {
   white-space: nowrap;
 }
 
-.playverse-topbar-page-link:hover {
+.playzo-topbar-page-link:hover {
   color: var(--accent);
 }
 
-.playverse-menu-btn {
+.playzo-menu-btn {
   color: var(--ink) !important;
   padding: 0.35rem 0.55rem;
   border-radius: 10px;
@@ -395,7 +395,7 @@ body {
 }
 
 /* Large screens: brand strip fills space left of nav (hamburger is mobile-only). */
-.playverse-topbar-desktop-fill {
+.playzo-topbar-desktop-fill {
   flex: 1 1 auto;
   align-items: center;
   gap: 0.55rem;
@@ -411,12 +411,12 @@ body {
     border-color 0.2s ease;
 }
 
-.playverse-topbar-desktop-fill:hover {
+.playzo-topbar-desktop-fill:hover {
   background: color-mix(in srgb, var(--accent-soft) 55%, var(--app-card) 45%);
   border-color: var(--accent-border);
 }
 
-.playverse-topbar-desktop-fill-mark {
+.playzo-topbar-desktop-fill-mark {
   width: 9px;
   height: 9px;
   border-radius: 3px;
@@ -425,7 +425,7 @@ body {
   box-shadow: 0 0 14px var(--accent-glow);
 }
 
-.playverse-topbar-desktop-fill-text {
+.playzo-topbar-desktop-fill-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -434,7 +434,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .playverse-topbar-desktop-fill-text {
+  .playzo-topbar-desktop-fill-text {
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
@@ -442,7 +442,7 @@ body {
   }
 }
 
-.playverse-topbar-desktop-fill-title {
+.playzo-topbar-desktop-fill-title {
   font-size: 0.92rem;
   font-weight: 900;
   letter-spacing: -0.02em;
@@ -450,14 +450,14 @@ body {
   white-space: nowrap;
 }
 
-.playverse-topbar-desktop-fill-tagline {
+.playzo-topbar-desktop-fill-tagline {
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--slate-blue-500);
   white-space: nowrap;
 }
 
-.playverse-search-open-btn {
+.playzo-search-open-btn {
   flex-shrink: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -476,35 +476,35 @@ body {
     transform 0.2s ease;
 }
 
-.playverse-search-open-btn:hover {
+.playzo-search-open-btn:hover {
   background: var(--accent-soft);
   box-shadow: 0 0 20px var(--accent-glow);
   transform: translateY(-1px);
   color: var(--accent-2);
 }
 
-.playverse-search-modal .modal-content {
+.playzo-search-modal .modal-content {
   background: var(--app-card);
   color: var(--ink);
   border: 1px solid var(--border-subtle);
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
 }
 
-.playverse-search-modal-hint {
+.playzo-search-modal-hint {
   color: var(--slate-blue-500);
   font-size: 0.82rem;
 }
 
-.playverse-search-modal .modal-header .modal-title {
+.playzo-search-modal .modal-header .modal-title {
   color: var(--ink);
 }
 
-[data-theme="dark"] .playverse-search-modal-close {
+[data-theme="dark"] .playzo-search-modal-close {
   filter: invert(1);
   opacity: 0.85;
 }
 
-.playverse-search.search-container {
+.playzo-search.search-container {
   border-radius: 12px;
   border: 1px solid var(--border-subtle);
   background: var(--app-card);
@@ -513,13 +513,13 @@ body {
   margin-right: auto;
 }
 
-.playverse-search--modal.search-container {
+.playzo-search--modal.search-container {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
 }
 
-.playverse-search-suggest {
+.playzo-search-suggest {
   max-height: min(52vh, 22rem);
   overflow-y: auto;
   border-radius: 10px;
@@ -527,7 +527,7 @@ body {
   background: color-mix(in srgb, var(--app-surface) 96%, var(--accent) 4%);
 }
 
-.playverse-search-suggest-link {
+.playzo-search-suggest-link {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -540,15 +540,15 @@ body {
   transition: background 0.15s ease;
 }
 
-.playverse-search-suggest li:last-child .playverse-search-suggest-link {
+.playzo-search-suggest li:last-child .playzo-search-suggest-link {
   border-bottom: none;
 }
 
-.playverse-search-suggest-link:hover {
+.playzo-search-suggest-link:hover {
   background: var(--accent-soft);
 }
 
-.playverse-search-suggest-thumb {
+.playzo-search-suggest-thumb {
   flex-shrink: 0;
   width: 44px;
   height: 44px;
@@ -558,23 +558,23 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
-.playverse-search-suggest-thumb img {
+.playzo-search-suggest-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.playverse-search-suggest-name {
+.playzo-search-suggest-name {
   min-width: 0;
   line-height: 1.3;
 }
 
-.playverse-search .search-input {
+.playzo-search .search-input {
   background: transparent !important;
   color: var(--ink) !important;
 }
 
-.playverse-kbd-hint {
+.playzo-kbd-hint {
   font-size: 0.68rem;
   font-weight: 600;
   padding: 0.35rem 0.55rem;
@@ -584,7 +584,7 @@ body {
   background: var(--app-surface);
 }
 
-.playverse-theme-toggle {
+.playzo-theme-toggle {
   flex-shrink: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -602,13 +602,13 @@ body {
     transform 0.2s ease;
 }
 
-.playverse-theme-toggle:hover {
+.playzo-theme-toggle:hover {
   background: var(--accent-soft);
   box-shadow: 0 0 20px var(--accent-glow);
   transform: translateY(-1px);
 }
 
-.playverse-content {
+.playzo-content {
   flex: 1;
   min-width: 0;
   overflow-x: hidden;
@@ -616,18 +616,18 @@ body {
 }
 
 @media (min-width: 992px) {
-  .playverse-content {
+  .playzo-content {
     padding-bottom: 0;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .playverse-content {
-    padding-bottom: max(4.75rem, var(--playverse-bottom-nav-h));
+  .playzo-content {
+    padding-bottom: max(4.75rem, var(--playzo-bottom-nav-h));
   }
 }
 
-.playverse-bottom-nav {
+.playzo-bottom-nav {
   position: fixed;
   left: 0;
   right: 0;
@@ -644,11 +644,11 @@ body {
   box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.35);
 }
 
-[data-theme="light"] .playverse-bottom-nav {
+[data-theme="light"] .playzo-bottom-nav {
   background: rgba(255, 255, 255, 0.94);
 }
 
-.playverse-bottom-nav-link {
+.playzo-bottom-nav-link {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -667,18 +667,18 @@ body {
     background 0.2s ease;
 }
 
-.playverse-bottom-nav-link i {
+.playzo-bottom-nav-link i {
   font-size: 1.15rem;
   color: var(--accent);
 }
 
-.playverse-bottom-nav-link:hover {
+.playzo-bottom-nav-link:hover {
   color: var(--ink);
   background: var(--accent-soft);
 }
 
 /* Home right rail — sticky below header, scrolls inside if tall */
-.playverse-rail {
+.playzo-rail {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -689,12 +689,12 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .playverse-home .row {
+  .playzo-home .row {
     align-items: flex-start;
   }
 
-  .playverse-rail {
-    /* max-height: calc(100dvh - var(--playverse-sticky-top) - 0.75rem); */
+  .playzo-rail {
+    /* max-height: calc(100dvh - var(--playzo-sticky-top) - 0.75rem); */
     overflow-y: auto;
     overflow-x: visible;
     overscroll-behavior: contain;
@@ -705,22 +705,22 @@ body {
   }
 }
 
-.playverse-rail::-webkit-scrollbar {
+.playzo-rail::-webkit-scrollbar {
   width: 4px;
 }
 
-.playverse-rail::-webkit-scrollbar-thumb {
+.playzo-rail::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: var(--border-subtle);
 }
 
 /* Below xl the rail is in-flow; keep promos from shrinking oddly in flex layouts */
-.playverse-rail>* {
+.playzo-rail>* {
   flex-shrink: 0;
 }
 
 /* Right rail: recent plays — small snap carousel */
-.playverse-rail-recent {
+.playzo-rail-recent {
   padding: 0.55rem 0.5rem 0.65rem;
   border-radius: 12px;
   border: 1px solid var(--border-subtle);
@@ -728,11 +728,11 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
-.playverse-rail-recent-head {
+.playzo-rail-recent-head {
   margin-bottom: 0.45rem;
 }
 
-.playverse-rail-recent-title {
+.playzo-rail-recent-title {
   display: flex;
   align-items: center;
   gap: 0.35rem;
@@ -744,12 +744,12 @@ body {
   color: var(--ink);
 }
 
-.playverse-rail-recent-title .fa {
+.playzo-rail-recent-title .fa {
   color: var(--accent-2);
   font-size: 0.75rem;
 }
 
-.playverse-rail-recent-track {
+.playzo-rail-recent-track {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -765,16 +765,16 @@ body {
   scrollbar-color: color-mix(in srgb, var(--accent) 40%, transparent) transparent;
 }
 
-.playverse-rail-recent-track::-webkit-scrollbar {
+.playzo-rail-recent-track::-webkit-scrollbar {
   height: 4px;
 }
 
-.playverse-rail-recent-track::-webkit-scrollbar-thumb {
+.playzo-rail-recent-track::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
-.playverse-rail-recent-card {
+.playzo-rail-recent-card {
   flex: 0 0 auto;
   scroll-snap-align: start;
   display: flex;
@@ -796,13 +796,13 @@ body {
     transform 0.15s ease;
 }
 
-.playverse-rail-recent-card:hover {
+.playzo-rail-recent-card:hover {
   border-color: var(--accent-border);
   box-shadow: 0 0 14px var(--accent-glow);
   transform: translateY(-1px);
 }
 
-.playverse-rail-recent-thumb {
+.playzo-rail-recent-thumb {
   width: 2.35rem;
   height: 2.35rem;
   border-radius: 8px;
@@ -810,14 +810,14 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
-.playverse-rail-recent-thumb img {
+.playzo-rail-recent-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.playverse-rail-recent-name {
+.playzo-rail-recent-name {
   font-size: 0.58rem;
   font-weight: 700;
   line-height: 1.2;
@@ -831,12 +831,12 @@ body {
   max-width: 100%;
 }
 
-[data-theme="light"] .playverse-rail-recent-name {
+[data-theme="light"] .playzo-rail-recent-name {
   color: var(--slate-blue-700);
 }
 
 /* Right rail: advertisement promos + trending list */
-.playverse-promo {
+.playzo-promo {
   position: relative;
   overflow: hidden;
   padding: 1.1rem 3.75rem 1.35rem 1rem;
@@ -850,13 +850,13 @@ body {
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
 }
 
-[data-theme="light"] .playverse-promo {
+[data-theme="light"] .playzo-promo {
   background:
     radial-gradient(120% 80% at 100% 0%, rgba(123, 63, 228, 0.12) 0%, transparent 45%),
     linear-gradient(165deg, #ffffff 0%, #f1f5f9 100%);
 }
 
-.playverse-promo::before {
+.playzo-promo::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -866,7 +866,7 @@ body {
   pointer-events: none;
 }
 
-.playverse-promo-adlabel {
+.playzo-promo-adlabel {
   position: relative;
   margin: 0 0 0.65rem;
   font-size: 0.62rem;
@@ -876,7 +876,7 @@ body {
   color: var(--slate-blue-500);
 }
 
-.playverse-promo-title {
+.playzo-promo-title {
   position: relative;
   margin: 0 0 0.5rem;
   font-size: 1.15rem;
@@ -885,7 +885,7 @@ body {
   color: var(--ink);
 }
 
-.playverse-promo-em {
+.playzo-promo-em {
   color: #8b5cf6;
   background: linear-gradient(90deg, #a78bfa, #6333e8);
   -webkit-background-clip: text;
@@ -893,14 +893,14 @@ body {
   color: transparent;
 }
 
-[data-theme="light"] .playverse-promo-em {
+[data-theme="light"] .playzo-promo-em {
   background: linear-gradient(90deg, #7c3aed, #6333e8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.playverse-promo-text {
+.playzo-promo-text {
   position: relative;
   margin: 0 0 1rem;
   padding-right: 0.25rem;
@@ -909,7 +909,7 @@ body {
   color: var(--slate-blue-600);
 }
 
-.playverse-promo-btn {
+.playzo-promo-btn {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -932,18 +932,18 @@ body {
     box-shadow 0.22s ease;
 }
 
-.playverse-promo-btn:hover {
+.playzo-promo-btn:hover {
   filter: brightness(1.06);
   transform: translateY(-2px) scale(1.01);
   box-shadow: 0 12px 32px rgba(99, 51, 232, 0.45);
   color: #fff !important;
 }
 
-.playverse-promo-btn--alt {
+.playzo-promo-btn--alt {
   background: linear-gradient(180deg, #9333ea 0%, #7c3aed 50%, #6d28d9 100%) !important;
 }
 
-.playverse-promo-icon {
+.playzo-promo-icon {
   position: absolute;
   right: 0.25rem;
   bottom: 0.35rem;
@@ -954,12 +954,12 @@ body {
   transform: rotate(-8deg);
 }
 
-.playverse-promo-icon--pad {
+.playzo-promo-icon--pad {
   font-size: 2.85rem;
   color: rgba(167, 139, 250, 0.4);
 }
 
-.playverse-trending-panel {
+.playzo-trending-panel {
   padding: 0.9rem 0.85rem 1rem;
   border-radius: 14px;
   background: var(--app-card);
@@ -967,7 +967,7 @@ body {
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
 }
 
-.playverse-trending-top {
+.playzo-trending-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -977,14 +977,14 @@ body {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.playverse-trending-heading {
+.playzo-trending-heading {
   margin: 0;
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--ink);
 }
 
-.playverse-trending-viewall {
+.playzo-trending-viewall {
   font-size: 0.78rem;
   font-weight: 700;
   color: #8b5cf6;
@@ -992,22 +992,22 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.playverse-trending-viewall:hover {
+.playzo-trending-viewall:hover {
   opacity: 0.85;
   color: #a78bfa;
 }
 
-.playverse-trending-list {
+.playzo-trending-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.playverse-trending-list li+li {
+.playzo-trending-list li+li {
   margin-top: 0.25rem;
 }
 
-.playverse-trending-row {
+.playzo-trending-row {
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
@@ -1020,12 +1020,12 @@ body {
     transform 0.2s ease;
 }
 
-.playverse-trending-row:hover {
+.playzo-trending-row:hover {
   background: color-mix(in srgb, var(--accent) 12%, transparent);
   transform: scale(1.01);
 }
 
-.playverse-trending-rank {
+.playzo-trending-rank {
   flex-shrink: 0;
   width: 1.35rem;
   padding-top: 0.2rem;
@@ -1036,12 +1036,12 @@ body {
   color: var(--slate-blue-500);
 }
 
-.playverse-trending-rank--top {
+.playzo-trending-rank--top {
   color: #eab308;
   text-shadow: 0 0 12px rgba(234, 179, 8, 0.35);
 }
 
-.playverse-trending-thumb {
+.playzo-trending-thumb {
   width: 44px;
   height: 44px;
   margin-top: 0.1rem;
@@ -1051,14 +1051,14 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
-.playverse-trending-thumb img {
+.playzo-trending-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.playverse-trending-name {
+.playzo-trending-name {
   flex: 1;
   min-width: 0;
   font-size: 0.82rem;
@@ -1072,7 +1072,7 @@ body {
   word-break: break-word;
 }
 
-.playverse-trending-heat {
+.playzo-trending-heat {
   flex-shrink: 0;
   display: inline-flex;
   align-items: flex-start;
@@ -1083,12 +1083,12 @@ body {
   color: var(--slate-blue-500);
 }
 
-.playverse-trending-heat .fa-fire {
+.playzo-trending-heat .fa-fire {
   color: #f97316;
   font-size: 0.75rem;
 }
 
-.playverse-home-main {
+.playzo-home-main {
   min-width: 0;
 }
 
@@ -1220,12 +1220,12 @@ header.app-header {
 /* Category pill strip — sticky under topbar, horizontal snap carousel */
 .category-button-bar {
   position: sticky;
-  top: var(--playverse-topbar-h);
+  top: var(--playzo-topbar-h);
   z-index: 1028;
   background: linear-gradient(180deg, color-mix(in srgb, var(--app-surface) 92%, #000) 0%, var(--app-bg) 100%);
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  min-height: var(--playverse-category-bar-h);
+  min-height: var(--playzo-category-bar-h);
   box-sizing: border-box;
 }
 
@@ -1308,17 +1308,17 @@ header.app-header {
 }
 
 /* Inner pages: game + static pages share width + card styling */
-.playverse-page {
+.playzo-page {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.playverse-page .game-container {
+.playzo-page .game-container {
   margin-top: 0;
 }
 
-/* —— Game page: streaming-style hero + player + sidebar (playverse purple) —— */
+/* —— Game page: streaming-style hero + player + sidebar (playzo purple) —— */
 .game-stream-layout {
   align-items: flex-start;
 }
@@ -1740,7 +1740,7 @@ header.app-header {
   box-shadow: 0 0 22px var(--accent-glow);
 }
 
-.playverse-saved-btn {
+.playzo-saved-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -1758,13 +1758,13 @@ header.app-header {
     transform 0.15s ease;
 }
 
-.playverse-saved-btn:hover {
+.playzo-saved-btn:hover {
   color: var(--ink);
   box-shadow: 0 0 18px var(--accent-glow);
   transform: translateY(-1px);
 }
 
-.playverse-saved-badge {
+.playzo-saved-badge {
   position: absolute;
   top: -4px;
   right: -4px;
@@ -1781,18 +1781,18 @@ header.app-header {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.playverse-saved-offcanvas {
+.playzo-saved-offcanvas {
   background: var(--app-surface) !important;
   color: var(--ink);
   max-width: min(380px, 94vw);
 }
 
-.playverse-saved-offcanvas .offcanvas-body {
+.playzo-saved-offcanvas .offcanvas-body {
   min-height: min(50dvh, 28rem);
   background: var(--app-surface);
 }
 
-.playverse-saved-offcanvas .offcanvas-title {
+.playzo-saved-offcanvas .offcanvas-title {
   color: var(--ink);
 }
 
@@ -1963,7 +1963,7 @@ header.app-header {
   flex-direction: column;
   gap: 1rem;
   position: sticky;
-  top: var(--playverse-sticky-top, 5.5rem);
+  top: var(--playzo-sticky-top, 5.5rem);
   align-self: flex-start;
 }
 
@@ -2282,7 +2282,7 @@ header.app-header {
   color: var(--ink);
 }
 
-.playverse-page .info-the-game {
+.playzo-page .info-the-game {
   margin-top: 1.5rem;
   padding: 1.25rem 1.15rem;
   border-radius: 14px;
@@ -2292,7 +2292,7 @@ header.app-header {
 }
 
 /* Game page: short “About” blurb (~100 words) + guides */
-.playverse-page .game-about-panel {
+.playzo-page .game-about-panel {
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--border-subtle);
@@ -2307,7 +2307,7 @@ header.app-header {
     inset 0 1px 0 color-mix(in srgb, var(--accent-2) 35%, transparent);
 }
 
-.playverse-page .game-about-panel__intro {
+.playzo-page .game-about-panel__intro {
   position: relative;
   padding: 1.5rem 1.35rem 1.65rem;
   border-bottom: 1px solid var(--border-subtle);
@@ -2318,7 +2318,7 @@ header.app-header {
   );
 }
 
-.playverse-page .game-about-panel__eyebrow {
+.playzo-page .game-about-panel__eyebrow {
   display: block;
   font-size: 0.72rem;
   font-weight: 800;
@@ -2329,7 +2329,7 @@ header.app-header {
   opacity: 0.95;
 }
 
-.playverse-page .game-about-panel__title {
+.playzo-page .game-about-panel__title {
   font-size: clamp(1.2rem, 2.5vw, 1.45rem);
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -2339,7 +2339,7 @@ header.app-header {
   text-transform: none;
 }
 
-.playverse-page .game-about-panel__lead {
+.playzo-page .game-about-panel__lead {
   margin: 0;
   font-size: 1.02rem;
   line-height: 1.72;
@@ -2348,39 +2348,39 @@ header.app-header {
   max-width: 72ch;
 }
 
-.playverse-page .game-about-panel .game-seo-article {
+.playzo-page .game-about-panel .game-seo-article {
   padding: 1.35rem 1.35rem 1.5rem;
   margin-top: 0;
   border-top: none;
 }
 
-.playverse-page .game-about-panel__columns {
+.playzo-page .game-about-panel__columns {
   padding: 0 1.35rem 1.5rem;
   margin-top: 0 !important;
 }
 
-.playverse-page .game-about-panel__section-title {
+.playzo-page .game-about-panel__section-title {
   border-left: 4px solid var(--accent);
   padding-left: 1rem;
   font-weight: 750;
   letter-spacing: 0.02em;
 }
 
-.playverse-page .game-about-panel__section-title--accent2 {
+.playzo-page .game-about-panel__section-title--accent2 {
   border-left-color: var(--accent-2);
 }
 
-.playverse-page .game-about-panel .border-top.border-secondary {
+.playzo-page .game-about-panel .border-top.border-secondary {
   margin-left: 1.35rem;
   margin-right: 1.35rem;
   padding-bottom: 1.25rem !important;
 }
 
-[data-theme="light"] .playverse-page .info-the-game {
+[data-theme="light"] .playzo-page .info-the-game {
   box-shadow: 0 4px 22px rgba(15, 23, 42, 0.07);
 }
 
-.playverse-page .info-the-game h2 {
+.playzo-page .info-the-game h2 {
   font-size: 1.05rem;
   font-weight: 800;
   margin: 0 0 0.85rem;
@@ -2389,26 +2389,26 @@ header.app-header {
   text-transform: uppercase;
 }
 
-.playverse-page .info-the-game p {
+.playzo-page .info-the-game p {
   color: var(--slate-blue-600);
   line-height: 1.65;
   margin: 0;
 }
 
-.playverse-page .game-description-lead {
+.playzo-page .game-description-lead {
   font-size: 0.98rem;
   font-weight: 600;
   color: var(--slate-blue-700);
   margin-bottom: 1rem !important;
 }
 
-.playverse-page .game-seo-article {
+.playzo-page .game-seo-article {
   margin-top: 1.25rem;
   padding-top: 1.35rem;
   border-top: 1px solid var(--border-subtle);
 }
 
-.playverse-page .game-seo-guide-heading {
+.playzo-page .game-seo-guide-heading {
   text-transform: none;
   letter-spacing: 0.02em;
   font-size: 1.08rem;
@@ -2418,7 +2418,7 @@ header.app-header {
   color: var(--ink);
 }
 
-.playverse-page .game-seo-kicker {
+.playzo-page .game-seo-kicker {
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--slate-blue-500);
@@ -2426,26 +2426,26 @@ header.app-header {
   line-height: 1.5;
 }
 
-.playverse-page .game-seo-article p {
+.playzo-page .game-seo-article p {
   font-size: 0.92rem;
   line-height: 1.75;
   margin: 0 0 0.95rem;
   color: var(--slate-blue-600);
 }
 
-.playverse-page .game-seo-article p:last-child {
+.playzo-page .game-seo-article p:last-child {
   margin-bottom: 0;
 }
 
-.playverse-page .info-the-game .rating {
+.playzo-page .info-the-game .rating {
   color: var(--slate-blue-600);
 }
 
-.playverse-page .info-the-game .star-on {
+.playzo-page .info-the-game .star-on {
   color: var(--accent-2);
 }
 
-.playverse-page .single-description {
+.playzo-page .single-description {
   margin-bottom: 0.75rem;
 }
 
@@ -2535,13 +2535,13 @@ footer a:hover {
 }
 
 /* Legacy styles.css sets .pages a to teal — use theme purple instead */
-.playverse-root footer ul.pages a,
-.playverse-root footer .pages a {
+.playzo-root footer ul.pages a,
+.playzo-root footer .pages a {
   color: var(--accent-2) !important;
 }
 
-.playverse-root footer ul.pages a:hover,
-.playverse-root footer .pages a:hover {
+.playzo-root footer ul.pages a:hover,
+.playzo-root footer .pages a:hover {
   color: var(--accent) !important;
 }
 
@@ -3131,7 +3131,7 @@ footer a:hover {
   }
 }
 
-/* Browse by category — v2 card row (playverse-style) */
+/* Browse by category — v2 card row (playzo-style) */
 .home-browse-cats--v2 {
   margin-bottom: 2.5rem;
 }
@@ -3503,7 +3503,7 @@ footer a:hover {
 
 /* Mobile: hide hamburger while offcanvas menu is open */
 @media (max-width: 991.98px) {
-  html[data-offcanvas-nav="open"] .playverse-menu-btn {
+  html[data-offcanvas-nav="open"] .playzo-menu-btn {
     display: none !important;
   }
 }
@@ -4721,41 +4721,41 @@ footer a:hover {
   color: var(--slate-blue-600);
 }
 
-.playverse-simple-page {
+.playzo-simple-page {
   max-width: 48rem;
 }
 
-.playverse-simple-page-title {
+.playzo-simple-page-title {
   margin: 0 0 1rem;
   font-size: 1.65rem;
   font-weight: 800;
   color: var(--ink);
 }
 
-.playverse-simple-page-body p {
+.playzo-simple-page-body p {
   margin: 0 0 1rem;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--slate-blue-600);
 }
 
-.playverse-simple-page-body a {
+.playzo-simple-page-body a {
   color: var(--accent);
   font-weight: 600;
 }
 
-.playverse-simple-page-h2 {
+.playzo-simple-page-h2 {
   margin: 1.75rem 0 0.65rem;
   font-size: 1.05rem;
   font-weight: 800;
   color: var(--ink);
 }
 
-.playverse-simple-page-h2:first-of-type {
+.playzo-simple-page-h2:first-of-type {
   margin-top: 1.25rem;
 }
 
-.playverse-simple-page-list {
+.playzo-simple-page-list {
   margin: 0 0 1rem;
   padding-left: 1.2rem;
   font-size: 0.95rem;
@@ -4763,11 +4763,11 @@ footer a:hover {
   color: var(--slate-blue-600);
 }
 
-.playverse-simple-page-list li+li {
+.playzo-simple-page-list li+li {
   margin-top: 0.45rem;
 }
 
-.playverse-contact-form {
+.playzo-contact-form {
   margin: 0 0 1.75rem;
   padding: 1rem 1.1rem;
   border-radius: 12px;
@@ -4775,11 +4775,11 @@ footer a:hover {
   background: color-mix(in srgb, var(--app-card) 96%, transparent);
 }
 
-.playverse-contact-form-row {
+.playzo-contact-form-row {
   margin-bottom: 0.85rem;
 }
 
-.playverse-contact-label {
+.playzo-contact-label {
   display: block;
   margin-bottom: 0.35rem;
   font-size: 0.72rem;
@@ -4789,8 +4789,8 @@ footer a:hover {
   color: var(--slate-blue-500);
 }
 
-.playverse-contact-input,
-.playverse-contact-textarea {
+.playzo-contact-input,
+.playzo-contact-textarea {
   display: block;
   width: 100%;
   padding: 0.5rem 0.65rem;
@@ -4801,19 +4801,19 @@ footer a:hover {
   border-radius: 8px;
 }
 
-.playverse-contact-textarea {
+.playzo-contact-textarea {
   resize: vertical;
   min-height: 6rem;
 }
 
-.playverse-contact-input:focus,
-.playverse-contact-textarea:focus {
+.playzo-contact-input:focus,
+.playzo-contact-textarea:focus {
   outline: none;
   border-color: var(--accent-border);
   box-shadow: 0 0 0 2px var(--accent-soft);
 }
 
-.playverse-contact-submit {
+.playzo-contact-submit {
   margin-top: 0.25rem;
   padding: 0.5rem 1.25rem;
   font-weight: 800;
@@ -4826,15 +4826,15 @@ footer a:hover {
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 
-.playverse-contact-submit:hover {
+.playzo-contact-submit:hover {
   filter: brightness(1.06);
 }
 
-.playverse-contact-sent {
+.playzo-contact-sent {
   color: var(--slate-blue-500);
 }
 
-.playverse-contact-sent a {
+.playzo-contact-sent a {
   color: var(--accent);
   font-weight: 600;
 }
@@ -5325,7 +5325,7 @@ footer a:hover {
   color: var(--ink) !important;
 }
 
-.about-contact-form-section .playverse-contact-form {
+.about-contact-form-section .playzo-contact-form {
   margin-top: 0.5rem;
 }
 
@@ -5343,13 +5343,13 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* PlayVerse FAQ Accordion */
-.playverse-faq-accordion .accordion-item {
+/* PlayZo FAQ Accordion */
+.playzo-faq-accordion .accordion-item {
   background: transparent !important;
   border-bottom: 1px solid rgba(56, 189, 248, 0.15) !important;
 }
 
-.playverse-faq-accordion .accordion-button {
+.playzo-faq-accordion .accordion-button {
   background: transparent !important;
   color: var(--ink) !important;
   font-size: 0.95rem;
@@ -5359,15 +5359,15 @@ footer a:hover {
   transition: color 0.2s ease;
 }
 
-.playverse-faq-accordion .accordion-button:not(.collapsed) {
+.playzo-faq-accordion .accordion-button:not(.collapsed) {
   color: var(--accent) !important;
 }
 
-.playverse-faq-accordion .accordion-button::after {
+.playzo-faq-accordion .accordion-button::after {
   filter: brightness(0) invert(0.8);
 }
 
-.playverse-faq-accordion .accordion-body {
+.playzo-faq-accordion .accordion-body {
   padding: 0 0 1.25rem;
   font-size: 0.88rem;
   line-height: 1.7;

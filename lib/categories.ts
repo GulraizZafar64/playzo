@@ -36,7 +36,7 @@ export const BROWSE_CATEGORY_BUTTONS: { href: string; label: string; index: stri
   { href: "/category/shooting", label: "Shooting", index: "08" },
 ];
 
-/** Home “Browse by Categories” cards — Playverse-style row (icon + label + count). */
+/** Home “Browse by Categories” cards — Playzo-style row (icon + label + count). */
 export const BROWSE_CATEGORY_CARDS: {
   href: string;
   label: string;

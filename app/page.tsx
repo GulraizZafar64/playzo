@@ -22,9 +22,9 @@ export default function HomePage() {
   const homeEditorial = buildHomeEditorial(SITE_NAME);
 
   return (
-    <div className="container-fluid px-2 px-sm-3 py-3 playverse-page">
+    <div className="container-fluid px-2 px-sm-3 py-3 playzo-page">
       <div className="row g-3 g-xl-4">
-        <div className="col-12 col-xl-8 col-xxl-9 playverse-home-main">
+        <div className="col-12 col-xl-8 col-xxl-9 playzo-home-main">
           <HomeHero />
           <HomeEditorBento games={initialGames} />
           <HomeIntroBand />
@@ -68,7 +68,7 @@ export default function HomePage() {
               </div>
               <div className="col-md-6">
                 <h2 className="h4 mb-4 text-accent">Frequently Asked Questions</h2>
-                <div className="accordion accordion-flush playverse-faq-accordion" id="homeFaq">
+                <div className="accordion accordion-flush playzo-faq-accordion" id="homeFaq">
                   <div className="accordion-item">
                     <h2 className="accordion-header">
                       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1">

@@ -1,6 +1,6 @@
 /**
  * Regenerate data/games.json with descriptions pulled from
- * https://classroom-6x-online.github.io/game/{slug} (requires network).
+ * https://playzo.space/game/{slug} (requires network).
  */
 import { spawnSync } from "child_process";
 import path from "path";

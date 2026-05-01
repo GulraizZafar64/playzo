@@ -22,5 +22,5 @@ export function getSiteUrl(): string {
     return trim(`https://${host}`);
   }
 
-  return "http://localhost:3000";
+  return "https://playzo.space";
 }

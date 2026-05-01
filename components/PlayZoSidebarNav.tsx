@@ -19,32 +19,32 @@ const SIDEBAR_CATS = CATEGORY_LINKS.filter((c) =>
 function NavList() {
   return (
     <>
-      <ul className="playverse-nav-list">
+      <ul className="playzo-nav-list">
         {SIDEBAR_PRIMARY.map((item) => (
           <li key={item.href}>
-            <Link href={item.href} className="playverse-nav-link">
+            <Link href={item.href} className="playzo-nav-link">
               <i className={`fa ${item.icon}`} aria-hidden />
               <span>{item.label}</span>
             </Link>
           </li>
         ))}
       </ul>
-      <p className="playverse-nav-heading">Site</p>
-      <ul className="playverse-nav-list">
+      <p className="playzo-nav-heading">Site</p>
+      <ul className="playzo-nav-list">
         {SITE_PUBLIC_NAV.map((p) => (
           <li key={p.href}>
-            <Link href={p.href} className="playverse-nav-link" prefetch={p.href !== "/"}>
+            <Link href={p.href} className="playzo-nav-link" prefetch={p.href !== "/"}>
               <i className="fa fa-info-circle" aria-hidden />
               <span>{p.label}</span>
             </Link>
           </li>
         ))}
       </ul>
-      <p className="playverse-nav-heading">Categories</p>
-      <ul className="playverse-nav-list">
+      <p className="playzo-nav-heading">Categories</p>
+      <ul className="playzo-nav-list">
         {SIDEBAR_CATS.map((c) => (
           <li key={c.href}>
-            <Link href={c.href} className="playverse-nav-link">
+            <Link href={c.href} className="playzo-nav-link">
               <i className="fa fa-gamepad" aria-hidden />
               <span>{c.label}</span>
             </Link>
@@ -55,16 +55,16 @@ function NavList() {
   );
 }
 
-export function PlayVerseSidebarNavDesktop() {
+export function PlayZoSidebarNavDesktop() {
   return (
-    <nav className="playverse-sidebar-nav" aria-label="Main">
+    <nav className="playzo-sidebar-nav" aria-label="Main">
       <NavList />
-      <div className="playverse-sidebar-promo">
-        <p className="playverse-sidebar-promo-title">Play unlimited</p>
-        <p className="playverse-sidebar-promo-text">
+      <div className="playzo-sidebar-promo">
+        <p className="playzo-sidebar-promo-title">Play unlimited</p>
+        <p className="playzo-sidebar-promo-text">
           {PUBLIC_CATALOG_SIZE_LABEL} titles in your browser — no install.
         </p>
-        <Link href="/#all-games" className="btn playverse-sidebar-promo-btn" style={{fontSize: '0.7rem'}}>
+        <Link href="/#all-games" className="btn playzo-sidebar-promo-btn" style={{fontSize: '0.7rem'}}>
           Explore now
         </Link>
       </div>
@@ -72,13 +72,13 @@ export function PlayVerseSidebarNavDesktop() {
   );
 }
 
-export function PlayVerseSidebarNavOffcanvas() {
+export function PlayZoSidebarNavOffcanvas() {
   return (
-    <nav className="playverse-sidebar-nav" aria-label="Main">
+    <nav className="playzo-sidebar-nav" aria-label="Main">
       <NavList />
-      <div className="playverse-sidebar-promo mt-3">
-        <p className="playverse-sidebar-promo-title">Play unlimited</p>
-        <Link href="/#all-games" className="btn playverse-sidebar-promo-btn w-100">
+      <div className="playzo-sidebar-promo mt-3">
+        <p className="playzo-sidebar-promo-title">Play unlimited</p>
+        <Link href="/#all-games" className="btn playzo-sidebar-promo-btn w-100">
           Explore now
         </Link>
       </div>

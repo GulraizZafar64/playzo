@@ -34,7 +34,7 @@ function main() {
       patched++;
     }
   }
-  console.log(`[replace-classroom-brand] Updated ${patched} of ${files.length} HTML files (Playverse branding).`);
+  console.log(`[replace-classroom-brand] Updated ${patched} of ${files.length} HTML files (Playzo branding).`);
 }
 
 main();

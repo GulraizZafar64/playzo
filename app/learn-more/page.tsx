@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function LearnMorePage() {
   return (
-    <div className="container-fluid px-2 px-sm-3 py-4 py-md-5 playverse-page learn-more-page">
+    <div className="container-fluid px-2 px-sm-3 py-4 py-md-5 playzo-page learn-more-page">
       <nav className="mb-3" aria-label="Breadcrumb">
         <Link href="/" className="learn-more-back">
           ← Back to home

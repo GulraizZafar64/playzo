@@ -51,13 +51,13 @@ function SavedGamesOffcanvas() {
 
   return (
     <div
-      className="offcanvas offcanvas-end playverse-saved-offcanvas"
+      className="offcanvas offcanvas-end playzo-saved-offcanvas"
       tabIndex={-1}
-      id="playverseSavedGames"
-      aria-labelledby="playverseSavedGamesLabel"
+      id="playzoSavedGames"
+      aria-labelledby="playzoSavedGamesLabel"
     >
       <div className="offcanvas-header border-secondary border-opacity-25">
-        <h2 className="offcanvas-title h5 mb-0" id="playverseSavedGamesLabel">
+        <h2 className="offcanvas-title h5 mb-0" id="playzoSavedGamesLabel">
           Favorites
         </h2>
         <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" />
@@ -87,14 +87,14 @@ export default function SavedGamesLauncher() {
     <>
       <button
         type="button"
-        className="playverse-saved-btn"
+        className="playzo-saved-btn"
         data-bs-toggle="offcanvas"
-        data-bs-target="#playverseSavedGames"
-        aria-controls="playverseSavedGames"
+        data-bs-target="#playzoSavedGames"
+        aria-controls="playzoSavedGames"
         title="Favorites"
       >
         <i className="fa fa-heart" aria-hidden />
-        {total > 0 && <span className="playverse-saved-badge">{total > 9 ? "9+" : total}</span>}
+        {total > 0 && <span className="playzo-saved-badge">{total > 9 ? "9+" : total}</span>}
         <span className="visually-hidden">Open liked and favorite games</span>
       </button>
       {mounted && portalHost ? createPortal(<SavedGamesOffcanvas />, portalHost) : null}

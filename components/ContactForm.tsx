@@ -14,43 +14,43 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="playverse-contact-form" onSubmit={onSubmit} noValidate>
-      <div className="playverse-contact-form-row">
-        <label className="playverse-contact-label" htmlFor="contact-name">
+    <form className="playzo-contact-form" onSubmit={onSubmit} noValidate>
+      <div className="playzo-contact-form-row">
+        <label className="playzo-contact-label" htmlFor="contact-name">
           Name
         </label>
-        <input id="contact-name" name="name" type="text" className="playverse-contact-input" autoComplete="name" />
+        <input id="contact-name" name="name" type="text" className="playzo-contact-input" autoComplete="name" />
       </div>
-      <div className="playverse-contact-form-row">
-        <label className="playverse-contact-label" htmlFor="contact-email">
+      <div className="playzo-contact-form-row">
+        <label className="playzo-contact-label" htmlFor="contact-email">
           Your email
         </label>
         <input
           id="contact-email"
           name="email"
           type="email"
-          className="playverse-contact-input"
+          className="playzo-contact-input"
           autoComplete="email"
           inputMode="email"
         />
       </div>
-      <div className="playverse-contact-form-row">
-        <label className="playverse-contact-label" htmlFor="contact-subject">
+      <div className="playzo-contact-form-row">
+        <label className="playzo-contact-label" htmlFor="contact-subject">
           Subject
         </label>
-        <input id="contact-subject" name="subject" type="text" className="playverse-contact-input" />
+        <input id="contact-subject" name="subject" type="text" className="playzo-contact-input" />
       </div>
-      <div className="playverse-contact-form-row">
-        <label className="playverse-contact-label" htmlFor="contact-message">
+      <div className="playzo-contact-form-row">
+        <label className="playzo-contact-label" htmlFor="contact-message">
           Message
         </label>
-        <textarea id="contact-message" name="message" className="playverse-contact-textarea" rows={5} />
+        <textarea id="contact-message" name="message" className="playzo-contact-textarea" rows={5} />
       </div>
-      <button type="submit" className="btn playverse-contact-submit">
+      <button type="submit" className="btn playzo-contact-submit">
         Send
       </button>
       {sent ? (
-        <p className="playverse-contact-sent mb-0 mt-2 small" role="status">
+        <p className="playzo-contact-sent mb-0 mt-2 small" role="status">
           Thanks — your message was cleared. To reach us, email <a href={`mailto:${SITE_EMAIL}`}>{SITE_EMAIL}</a>.
         </p>
       ) : null}

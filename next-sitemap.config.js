@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://gamesapp-lake.vercel.app', // Update this to your production domain
+  siteUrl: 'https://playzo.space', // Update this to your production domain
   generateRobotsTxt: true,
   exclude: ['/server-sitemap.xml'], // exclude server-side sitemap if any
   robotsTxtOptions: {
@@ -11,7 +11,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://gamesapp-lake.vercel.app/server-sitemap.xml', // if you add dynamic sitemap later
+      'https://playzo.space/server-sitemap.xml', // if you add dynamic sitemap later
     ],
   },
 }

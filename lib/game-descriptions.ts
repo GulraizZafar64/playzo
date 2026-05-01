@@ -50,7 +50,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "among-us": {
     title: "Among Us",
     genre: "Action",
-    metaDescription: "Play Among Us free online! Find the impostor or complete your tasks as a crewmate in this thrilling social deduction game. No download required on Playverse.",
+    metaDescription: "Play Among Us free online! Find the impostor or complete your tasks as a crewmate in this thrilling social deduction game. No download required on Playzo.",
     description: "Among Us is a legendary social deduction game where players work together as crewmates to maintain a spaceship while one or more hidden impostors attempt to sabotage the mission. It is a masterpiece of psychological tension and teamwork that turns friends into rivals in a race for survival.",
     howToPlay: "Use WASD or Arrow keys to move your character. Click the 'Use/Report' button or press Space to interact with tasks. Impostors use the 'Kill' button to eliminate crewmates.",
     tips: [
@@ -92,7 +92,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "blockpost": {
     title: "Blockpost",
     genre: "Shooting",
-    metaDescription: "Enter the cubic battlefield of Blockpost. A tactical block-styled FPS with diverse weapons. Play this free browser game with no download on Playverse.",
+    metaDescription: "Enter the cubic battlefield of Blockpost. A tactical block-styled FPS with diverse weapons. Play this free browser game with no download on Playzo.",
     description: "Blockpost combines the aesthetics of block-building worlds with the intense mechanics of a competitive shooter. Featuring a massive arsenal and customizable loadouts, it offers a deep tactical experience in a charmingly pixelated environment.",
     howToPlay: "Control movement with WASD and aim with the Mouse. Left-click to fire, Right-click to aim down sights. Use scroll wheel or numbers 1-5 to switch your weapons.",
     tips: [
@@ -134,7 +134,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "awesome-tanks-2": {
     title: "Awesome Tanks 2",
     genre: "Arcade",
-    metaDescription: "The tanks are back in Awesome Tanks 2. More upgrades, bigger explosions, and better maps. Play this free browser game with no download on Playverse.",
+    metaDescription: "The tanks are back in Awesome Tanks 2. More upgrades, bigger explosions, and better maps. Play this free browser game with no download on Playzo.",
     description: "Awesome Tanks 2 builds upon the success of its predecessor with more weapons, tougher enemies, and more intricate level designs. It delivers a refined top-down combat experience that rewards both aggressive play and careful resource management.",
     howToPlay: "Drive with WASD or Arrow keys. Aim with the Mouse and click to fire. Use the numbers 1-9 to quickly switch between different heavy weapon types.",
     tips: [
@@ -234,7 +234,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "balloon-tower-defense-5": {
     title: "Bloons TD 5",
     genre: "Strategy",
-    metaDescription: "Pop every bloon in Bloons TD 5. A deep strategy game with endless upgrades. Play this free browser game with no download on Playverse today.",
+    metaDescription: "Pop every bloon in Bloons TD 5. A deep strategy game with endless upgrades. Play this free browser game with no download on Playzo today.",
     description: "Bloons Tower Defense 5 is the peak of classic tower defense. With a huge variety of monkey towers, specialized upgrade paths, and diverse maps, it tasks players with defending against infinite waves of colorful balloons (bloons).",
     howToPlay: "Use the Mouse to select towers and place them along the track. Click on placed towers to access upgrade menus and sell unwanted units for cash.",
     tips: [
@@ -262,7 +262,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "bloons-tower-defense-4": {
     title: "Bloons TD 4",
     genre: "Strategy",
-    metaDescription: "Strategy goes mobile-style in Bloons TD 4. New towers and a refined interface. Play this free browser game with no download today at Playverse.",
+    metaDescription: "Strategy goes mobile-style in Bloons TD 4. New towers and a refined interface. Play this free browser game with no download today at Playzo.",
     description: "Bloons Tower Defense 4 introduced a major graphical overhaul and a brand-new leveling system. It expanded the arsenal with more specialized towers, making the fight against the bloons more tactical and visually engaging than ever before.",
     howToPlay: "Use the Mouse to drag and drop towers onto the battlefield. Manage your money and life totals displayed at the top of the interface as you progress.",
     tips: [
@@ -304,7 +304,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "brain-test-2-tricky-stories": {
     title: "Brain Test 2: Tricky Stories",
     genre: "Puzzle",
-    metaDescription: "The stories continue in Brain Test 2. More puzzles and funny narrative levels. Play this free browser game with no download at Playverse today.",
+    metaDescription: "The stories continue in Brain Test 2. More puzzles and funny narrative levels. Play this free browser game with no download at Playzo today.",
     description: "Brain Test 2: Tricky Stories expands on the original formula by introducing characters and multi-part narrative puzzles. Each 'story' follows a unique theme, combining riddle-solving with lighthearted interactive storytelling.",
     howToPlay: "Click and drag objects to interact with the characters. Solve the tasks displayed in each story panel to progress to the next chapter of the adventure.",
     tips: [
@@ -432,7 +432,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "burnout-drift-hilltop": {
     title: "Burnout Drift: Hilltop",
     genre: "Racing",
-    metaDescription: "Extreme hill drifting in Burnout Drift: Hilltop. Master the mountain roads today. Play this free browser game with no download on Playverse.",
+    metaDescription: "Extreme hill drifting in Burnout Drift: Hilltop. Master the mountain roads today. Play this free browser game with no download on Playzo.",
     description: "Burnout Drift: Hilltop takes the intense drifting action to dangerous mountain roads. With narrow paths and steep drops, you must maintain your slide for as long as possible to earn points and upgrade your high-performance vehicle.",
     howToPlay: "Steer with Arrows or WASD. Use 'Space' for the handbrake and 'Shift' or 'CTRL' to shift gears if using a manual transmission setup.",
     tips: [
@@ -460,7 +460,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "cartoon-mini-racing": {
     title: "Cartoon Mini Racing",
     genre: "Racing",
-    metaDescription: "Colorful micro-racing in Cartoon Mini Racing. Fun for all ages on tiny tracks. Play this free browser game with no download at Playverse today.",
+    metaDescription: "Colorful micro-racing in Cartoon Mini Racing. Fun for all ages on tiny tracks. Play this free browser game with no download at Playzo today.",
     description: "Cartoon Mini Racing is a delightful and fast-paced micro-racer. Featuring vibrant graphics and quirky car designs, it offers a fun and competitive experience that is easy to pick up but difficult to master on its twisty, miniature tracks.",
     howToPlay: "Steer and accelerate using the Arrow keys. Use the keyboard to navigate the main menu and select your favorite tiny car and track combination.",
     tips: [
@@ -490,7 +490,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "basketball-stars": {
     title: "Basketball Stars",
     genre: "Sports",
-    metaDescription: "Competitive 2nd-gen hoops in Basketball Stars. More players and better moves. Play this free browser game with no download needed on Playverse.",
+    metaDescription: "Competitive 2nd-gen hoops in Basketball Stars. More players and better moves. Play this free browser game with no download needed on Playzo.",
     description: "Basketball Stars is the polished sequel to the legends series. It features a larger roster, more intricate special moves, and refined physics that make every three-pointer and block feel more impactful and rewarding.",
     howToPlay: "Control your player with Arrow keys. Use 'V' for a super shot, 'B' to perform an action, and 'S' to pump fake or steal the ball from your opponent.",
     tips: [
@@ -546,7 +546,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "american-football-challenge": {
     title: "American Football Challenge",
     genre: "Sports",
-    metaDescription: "Catch the winning touchdown in American Football Challenge. A test of reflexes. Play this free browser game with no download on Playverse.",
+    metaDescription: "Catch the winning touchdown in American Football Challenge. A test of reflexes. Play this free browser game with no download on Playzo.",
     description: "American Football Challenge puts you in the position of a receiver in the final seconds of a big game. Test your reflexes and hand-eye coordination as you attempt to catch high-speed passes in front of a roaring crowd.",
     howToPlay: "Move your player's hands using the Mouse to align with the incoming football. Click at the exact moment of impact to secure the catch and score.",
     tips: [
@@ -560,7 +560,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "bobblehead-soccer": {
     title: "Bobblehead Soccer",
     genre: "Sports",
-    metaDescription: "Big heads, big goals in Bobblehead Soccer. Fast 1-on-1 soccer action. Play free online with no download or account needed today at Playverse.",
+    metaDescription: "Big heads, big goals in Bobblehead Soccer. Fast 1-on-1 soccer action. Play free online with no download or account needed today at Playzo.",
     description: "Bobblehead Soccer features comical characters with oversized heads in a fast-paced 1-on-1 soccer duel. It's an arcade take on the world's most popular sport, emphasizing aerial play and powerful special abilities.",
     howToPlay: "Move with the Arrow keys. Press 'Up' to jump and use 'Space' or 'X' to kick the ball. Each character has a unique special move activated by specific keys.",
     tips: [
@@ -574,7 +574,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "bumper-cars-soccer": {
     title: "Bumper Cars Soccer",
     genre: "Sports",
-    metaDescription: "Vehicular sports mayhem in Bumper Cars Soccer. Collide and score to win. Play this free browser game with no download needed on Playverse.",
+    metaDescription: "Vehicular sports mayhem in Bumper Cars Soccer. Collide and score to win. Play this free browser game with no download needed on Playzo.",
     description: "Bumper Cars Soccer combines the fun of the fairground with the competition of the soccer pitch. Drive your bumper car into the giant ball and out-maneuver your opponents in this chaotic vehicular sports mashup.",
     howToPlay: "Drive your car using WASD or Arrow keys. Use the momentum of your vehicle to push the ball toward the opponent's goal and defend your own net.",
     tips: [
@@ -618,7 +618,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "age-of-war": {
     title: "Age of War",
     genre: "Strategy",
-    metaDescription: "Evolve through the ages in Age of War. A legendary base defense game. Play free online with no download or account required today on Playverse.",
+    metaDescription: "Evolve through the ages in Age of War. A legendary base defense game. Play free online with no download or account required today on Playzo.",
     description: "Age of War is a classic strategy game where you must defend your base through different historical eras. From cavemen with clubs to futuristic super-soldiers, you must evolve faster than your enemy to win the war.",
     howToPlay: "Use the Mouse to click on icons and spawn units or build base defenses. Use your special attack sparingly by clicking the lighting icon at the top.",
     tips: [
@@ -632,7 +632,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "baldi": {
     title: "Baldi's Basics",
     genre: "Adventure",
-    metaDescription: "Survive detention in Baldi's Basics. A quirky horror-adventure in a school. Play free online with no download or install required at Playverse.",
+    metaDescription: "Survive detention in Baldi's Basics. A quirky horror-adventure in a school. Play free online with no download or install required at Playzo.",
     description: "Baldi's Basics in Education and Learning is a surreal horror-comedy. Collect all 7 notebooks while avoiding the terrifying schoolteacher Baldi, who gets faster and smarter with every math problem you answer.",
     howToPlay: "WASD to move, Mouse to look around. Left-click to interact with doors and items. Right-click to use an item from your inventory to hinder Baldi.",
     tips: [
@@ -646,7 +646,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "big-tower-tiny-square": {
     title: "Big Tower Tiny Square",
     genre: "Arcade",
-    metaDescription: "One massive tower, one tiny square in Big Tower Tiny Square. A platforming epic. Play this free browser game with no download on Playverse today.",
+    metaDescription: "One massive tower, one tiny square in Big Tower Tiny Square. A platforming epic. Play this free browser game with no download on Playzo today.",
     description: "Big Tower Tiny Square is a platforming masterpiece where the entire game is one massive, seamless tower. Navigate through lethal traps and vertical challenges to reclaim your pineapple from the top of the world.",
     howToPlay: "Move with AD or Arrow keys. Use the spacebar to jump. You can wall-jump by pressing jump again when touching a vertical surface during your ascent.",
     tips: [
@@ -688,7 +688,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "bob-the-robber-2": {
     title: "Bob the Robber 2",
     genre: "Adventure",
-    metaDescription: "More heists in Bob the Robber 2. Bigger buildings and better security. Play this free browser game with no download on Playverse today.",
+    metaDescription: "More heists in Bob the Robber 2. Bigger buildings and better security. Play this free browser game with no download on Playzo today.",
     description: "Bob the Robber 2 takes the stealth action and expands it with new gadgets and more complex levels. Face off against aggressive dogs and new electronic locks as you continue Bob's mission of justice.",
     howToPlay: "Use WASD or Arrows to move. Interact with objects using the keyboard prompts that appear. Buy new equipment from the shop between missions to aid your escape.",
     tips: [
@@ -716,7 +716,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "bob-the-robber-4": {
     title: "Bob the Robber 4",
     genre: "Adventure",
-    metaDescription: "Bob takes on France in Bob the Robber 4. A global heist adventure today. Play this free browser game with no download on Playverse.",
+    metaDescription: "Bob takes on France in Bob the Robber 4. A global heist adventure today. Play this free browser game with no download on Playzo.",
     description: "Bob the Robber 4 takes our hero to international locations, starting with the city of Paris. It features a complete graphical overhaul and a new clothes system that grants Bob unique stealth and speed bonuses.",
     howToPlay: "Control Bob with WASD. Use the menu to equip different hats and suits you've unlocked. Click on interactive screens to initiate the advanced hacking sequences.",
     tips: [
@@ -744,7 +744,7 @@ export const MANUAL_DESCRIPTIONS: Record<string, GameDescription> = {
   "cluster-rush": {
     title: "Cluster Rush",
     genre: "Action",
-    metaDescription: "High-adrenaline parkour in Cluster Rush. Jump across moving trucks to survive. Play this free browser game with no download on Playverse today.",
+    metaDescription: "High-adrenaline parkour in Cluster Rush. Jump across moving trucks to survive. Play this free browser game with no download on Playzo today.",
     description: "Cluster Rush is an intense first-person parkour game where you must jump between the tops of moving trucks. One slip means a fall to the road and instant failure, requiring absolute focus and perfect jump timing.",
     howToPlay: "Use the Arrow keys or WASD to steer yourself while in the air. Press the Spacebar to jump. Your square character moves forward automatically at high speed.",
     tips: [
@@ -769,7 +769,7 @@ export function getFallbackDescription(game: {
   const config: Partial<GameDescription> = {
     title,
     genre,
-    metaDescription: `Play ${title} free in your browser on Playverse — no install.`,
+    metaDescription: `Play ${title} free in your browser on Playzo — no install.`,
     description: `${title} runs in your browser. Use the on-screen or in-game prompts for controls; each title varies slightly.`,
     relatedGenre: genreLower,
   };
@@ -865,7 +865,7 @@ export function getGameDescription(game: {
   slug: string;
   title: string;
   genre: string;
-  /** From `data/games.json` — usually meta text from classroom-6x-online.github.io, ~100 words at build. */
+  /** From `data/games.json` — usually meta text from playzo.space, ~100 words at build. */
   catalogDescription?: string;
 }): GameDescription {
   const normalizedSlug = (game.slug || "").toLowerCase().replace(/_/g, "-");

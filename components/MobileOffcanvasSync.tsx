@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const OFFCANVAS_ID = "playverseSidebar";
+const OFFCANVAS_ID = "playzoSidebar";
 
 /** 
  * One-time effect to sync the data-offcanvas-nav attribute on <html> 

@@ -6,7 +6,7 @@ import SavedGamesLauncher from "./SavedGamesLauncher";
 import ThemeToggle from "./ThemeToggle";
 import SearchHotkeys from "./SearchHotkeys";
 import MobileOffcanvasSync from "./MobileOffcanvasSync";
-import { PlayVerseSidebarNavDesktop, PlayVerseSidebarNavOffcanvas } from "./PlayVerseSidebarNav";
+import { PlayZoSidebarNavDesktop, PlayZoSidebarNavOffcanvas } from "./PlayZoSidebarNav";
 import { SITE_NAME } from "@/lib/site-brand";
 import { PUBLIC_CATALOG_SIZE_LABEL } from "@/lib/site-stats";
 import { SITE_PUBLIC_NAV } from "@/lib/site-pages";
@@ -14,29 +14,29 @@ import SearchModalContent from "./SearchModalContent";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="app-shell playverse-root">
+    <div className="app-shell playzo-root">
       <SearchHotkeys />
       <MobileOffcanvasSync />
-      <aside className="playverse-sidebar" aria-label="Site navigation">
-        <div className="playverse-sidebar-inner">
-          <Link className="playverse-logo" href="/" prefetch>
-            <span className="playverse-logo-mark" aria-hidden />
-            <span className="playverse-logo-text">
-              <span className="text-white">Play</span><span style={{ color: 'var(--accent)' }}>Verse</span>
+      <aside className="playzo-sidebar" aria-label="Site navigation">
+        <div className="playzo-sidebar-inner">
+          <Link className="playzo-logo" href="/" prefetch>
+            <span className="playzo-logo-mark" aria-hidden />
+            <span className="playzo-logo-text">
+              <span className="text-white">Play</span><span style={{ color: 'var(--accent)' }}>zo</span>
             </span>
           </Link>
-          <PlayVerseSidebarNavDesktop />
+          <PlayZoSidebarNavDesktop />
         </div>
       </aside>
 
       <div
-        className="offcanvas offcanvas-start playverse-offcanvas"
+        className="offcanvas offcanvas-start playzo-offcanvas"
         tabIndex={-1}
-        id="playverseSidebar"
-        aria-labelledby="playverseSidebarLabel"
+        id="playzoSidebar"
+        aria-labelledby="playzoSidebarLabel"
       >
         <div className="offcanvas-header border-secondary border-opacity-25">
-          <h2 className="offcanvas-title h5 mb-0" id="playverseSidebarLabel">
+          <h2 className="offcanvas-title h5 mb-0" id="playzoSidebarLabel">
             Menu
           </h2>
           <button
@@ -47,19 +47,19 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           />
         </div>
         <div className="offcanvas-body">
-          <PlayVerseSidebarNavOffcanvas />
+          <PlayZoSidebarNavOffcanvas />
         </div>
       </div>
 
-      <div className="playverse-main">
-        <header className="playverse-topbar">
-          <div className="container-fluid playverse-topbar-inner">
+      <div className="playzo-main">
+        <header className="playzo-topbar">
+          <div className="container-fluid playzo-topbar-inner">
             <button
               type="button"
-              className="btn playverse-menu-btn"
+              className="btn playzo-menu-btn"
               data-bs-toggle="offcanvas"
-              data-bs-target="#playverseSidebar"
-              aria-controls="playverseSidebar"
+              data-bs-target="#playzoSidebar"
+              aria-controls="playzoSidebar"
               aria-label="Open menu"
             >
               <i className="fa fa-bars d-lg-none" aria-hidden />
@@ -68,33 +68,33 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             <Link
               href="/"
               prefetch
-              className="playverse-topbar-desktop-fill d-none d-lg-inline-flex"
+              className="playzo-topbar-desktop-fill d-none d-lg-inline-flex"
               aria-label={`${SITE_NAME} — home`}
             >
-              <span className="playverse-topbar-desktop-fill-mark" aria-hidden />
-              <span className="playverse-topbar-desktop-fill-text">
-                <span className="playverse-topbar-desktop-fill-title text-uppercase fw-900" style={{ letterSpacing: '0.05em' }}>
-                  <span className="text-white">Play</span><span style={{ color: 'var(--accent)' }}>Verse</span>
+              <span className="playzo-topbar-desktop-fill-mark" aria-hidden />
+              <span className="playzo-topbar-desktop-fill-text">
+                <span className="playzo-topbar-desktop-fill-title text-uppercase fw-900" style={{ letterSpacing: '0.05em' }}>
+                  <span className="text-white">Play</span><span style={{ color: 'var(--accent)' }}>zo</span>
                 </span>
-                <span className="playverse-topbar-desktop-fill-tagline d-none d-xl-inline">
+                <span className="playzo-topbar-desktop-fill-tagline d-none d-xl-inline">
                   {PUBLIC_CATALOG_SIZE_LABEL} browser games · No downloads
                 </span>
               </span>
             </Link>
             <nav
-              className="playverse-topbar-pages flex-grow-1 justify-content-center align-items-center"
+              className="playzo-topbar-pages flex-grow-1 justify-content-center align-items-center"
               aria-label="Site pages"
             >
               {SITE_PUBLIC_NAV.map((p) => (
-                <Link key={p.href} href={p.href} className="playverse-topbar-page-link" prefetch={p.href !== "/"}>
+                <Link key={p.href} href={p.href} className="playzo-topbar-page-link" prefetch={p.href !== "/"}>
                   {p.label}
                 </Link>
               ))}
             </nav>
-            <kbd className="playverse-kbd-hint d-none d-md-inline">Ctrl + K</kbd>
+            <kbd className="playzo-kbd-hint d-none d-md-inline">Ctrl + K</kbd>
             <button
               type="button"
-              className="btn playverse-search-open-btn"
+              className="btn playzo-search-open-btn"
               data-bs-toggle="modal"
               data-bs-target="#searchGameModal"
               aria-label="Open search"
@@ -107,7 +107,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </header>
 
         <div
-          className="modal fade playverse-search-modal"
+          className="modal fade playzo-search-modal"
           id="searchGameModal"
           tabIndex={-1}
           aria-labelledby="searchGameModalLabel"
@@ -119,7 +119,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <h2 className="modal-title h5 mb-0" id="searchGameModalLabel">
                   Search games
                 </h2>
-                <button type="button" className="btn-close playverse-search-modal-close" data-bs-dismiss="modal" aria-label="Close" />
+                <button type="button" className="btn-close playzo-search-modal-close" data-bs-dismiss="modal" aria-label="Close" />
               </div>
               <div className="modal-body">
                 <SearchModalContent />
@@ -130,26 +130,26 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         <CategoryButtonBar />
 
-        <div className="playverse-content app-content">{children}</div>
+        <div className="playzo-content app-content">{children}</div>
 
         <SiteFooter />
 
         <CookieConsent />
 
-        <nav className="playverse-bottom-nav d-xl-none" aria-label="Quick links">
-          <Link className="playverse-bottom-nav-link" href="/" prefetch={false}>
+        <nav className="playzo-bottom-nav d-xl-none" aria-label="Quick links">
+          <Link className="playzo-bottom-nav-link" href="/" prefetch={false}>
             <i className="fa fa-home" />
             <span>Home</span>
           </Link>
-          <Link className="playverse-bottom-nav-link" href="/#all-games" prefetch={false}>
+          <Link className="playzo-bottom-nav-link" href="/#all-games" prefetch={false}>
             <i className="fa fa-th-large" />
             <span>Games</span>
           </Link>
-          <Link className="playverse-bottom-nav-link" href="/#categories" prefetch={false}>
+          <Link className="playzo-bottom-nav-link" href="/#categories" prefetch={false}>
             <i className="fa fa-folder-open" />
             <span>Browse</span>
           </Link>
-          <Link className="playverse-bottom-nav-link" href="/category/trending" prefetch>
+          <Link className="playzo-bottom-nav-link" href="/category/trending" prefetch>
             <i className="fa fa-fire" />
             <span>Hot</span>
           </Link>

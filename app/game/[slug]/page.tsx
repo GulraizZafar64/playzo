@@ -116,7 +116,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
   };
 
   return (
-    <div className="container-fluid px-2 px-sm-3 py-3 playverse-page">
+    <div className="container-fluid px-2 px-sm-3 py-3 playzo-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="game-container">
         <div className="row g-3 g-xl-4 game-stream-layout">

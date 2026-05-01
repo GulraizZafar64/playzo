@@ -1,7 +1,7 @@
 /**
  * Build-time: reads legacy game/*.html and emits data/games.json.
  * Optional: FETCH_REMOTE_DESCRIPTIONS=1 fetches <meta name="description"> from
- * https://classroom-6x-online.github.io/game/{slug} (~100 words) for each title.
+ * https://playzo.space/game/{slug} (~100 words) for each title.
  */
 import fs from "fs";
 import path from "path";
@@ -21,14 +21,14 @@ const outFile = path.join(root, "data", "games.json");
 const DESCRIPTION_WORDS = 100;
 const FETCH_CONCURRENCY = 14;
 
-/** Legacy pages used "Classroom 6x"; site brand is Playverse (see lib/site-brand.ts). */
+/** Legacy pages used "Classroom 6x"; site brand is Playzo (see lib/site-brand.ts). */
 function normalizeBrand(str) {
   if (!str) return str;
   return str
-    .replace(/\bClassroom\s+6x\s+Team\b/gi, "Playverse Team")
-    .replace(/\bClassroom\s+6x\b/gi, "Playverse")
-    .replace(/\bclassroom\s+6x\s+unblocked\b/gi, "playverse unblocked")
-    .replace(/\bclassroom\s+6x\b/g, "playverse")
+    .replace(/\bClassroom\s+6x\s+Team\b/gi, "Playzo Team")
+    .replace(/\bClassroom\s+6x\b/gi, "Playzo")
+    .replace(/\bclassroom\s+6x\s+unblocked\b/gi, "playzo unblocked")
+    .replace(/\bclassroom\s+6x\b/g, "playzo")
     .replace(/free unblocked games 6x/gi, "free unblocked games");
 }
 
@@ -110,7 +110,7 @@ async function main() {
 
   if (shouldFetchRemote()) {
     console.log(
-      `[generate-games] FETCH_REMOTE_DESCRIPTIONS: fetching ~${games.length} pages from classroom-6x-online.github.io …`,
+      `[generate-games] FETCH_REMOTE_DESCRIPTIONS: fetching ~${games.length} pages from playzo.space …`,
     );
     let ok = 0;
     let fail = 0;

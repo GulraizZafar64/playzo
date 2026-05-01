@@ -7,12 +7,12 @@ export type SavedGameRef = {
 };
 
 const KEYS = {
-  liked: "playverse:liked-games",
-  favorites: "playverse:favorite-games",
-  recent: "playverse:recent-games",
+  liked: "playzo:liked-games",
+  favorites: "playzo:favorite-games",
+  recent: "playzo:recent-games",
 } as const;
 
-export const GAME_LIBRARY_EVENT = "playverse-game-library";
+export const GAME_LIBRARY_EVENT = "playzo-game-library";
 
 const LEGACY_KEYS = {
   liked: "c6x:liked-games",

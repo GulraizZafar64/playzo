@@ -1,0 +1,51 @@
+Priority | Slug | Reason it's high traffic
+1 | geometry-dash | Massive global player base, high "unblocked" search volume.
+2 | happy-wheels | Classic viral sensation, permanent high traffic.
+3 | slope | extremely addictive physics game, top choice for school breaks.
+4 | run-3 | The definitive endless runner for browser platforms.
+5 | minecraft-classic | One of the biggest search terms in gaming history.
+6 | shell-shockers | Top-tier browser FPS with huge community.
+7 | krunker | Most popular competitive browser FPS.
+8 | temple-run | Huge brand recognition from mobile stores.
+9 | subway-surfers | Billion-download brand, highly searched on web.
+10 | paper-io-2 | Leading .io title with high replayability.
+11 | fireboy-and-watergirl-1 | The "gold standard" for co-op browser puzzles.
+12 | zombs-royale | Top 2D battle royale with dedicated followers.
+13 | moto-x3m | Best-selling bike stunt series on the web.
+14 | pac-man | Essential retro gaming search term.
+15 | chess | Consistent high-volume daily searches.
+16 | tunnel-rush | Visual reflex game popular in school settings.
+17 | vex-3 | Hard platformer staple with many sequels.
+18 | slope-multiplayer | Variation of top brand with high competition.
+19 | smash-karts | Popular 3D racing/battle game.
+20 | hole-io | High-growth .io game with recognizable brand.
+21 | slither-io | The original .io sensation.
+22 | google-feud | Trivia/guessing game with high social shareability.
+23 | super-mario-run | Mario is a top-3 search keyword in gaming.
+24 | tomb-of-the-mask | High-speed arcade game from mobile.
+25 | bullet-force | Realistic browser FPS with high loyalty.
+26 | drift-hunters | Top simulation term for car enthusiasts.
+27 | retro-bowl | Viral American football sim, currently trending.
+28 | cookie-clicker | The father of all idle/clicker games.
+29 | flappy-bird | Permanent meme status/cultural recognition.
+30 | little-alchemy | Educational/Creative puzzle with high curiosity.
+31 | plants-vs-zombies | Strategy legend with massive brand equity.
+32 | angry-birds | Top 10 most recognized gaming brands.
+33 | stickman-hook | Physics-based swing game popular on TikTok/YouTube.
+34 | stack | Simple, aesthetic high-score game.
+35 | crossy-road | Recognizable vox-art style and brand.
+36 | duck-life-4 | RPG/Training series with nostalgic appeal.
+37 | earn-to-die-2 | High-action vehicular zombie brand.
+38 | getaway-shootout | Wacky physics multiplayer.
+39 | stickman-epic-battle | Action term with high click-through rate.
+40 | football-masters | European sports fans search volume.
+41 | friday-night-funkin | Rhythmic hit with massive modding community.
+42 | bad-time-simulator | Sans/Undertale fan-base search volume.
+43 | solitaire | High "filler" traffic from work/school environments.
+44 | sudoku | High recurring user base.
+45 | tetris | The most famous puzzle game in history.
+46 | uno | Classic card game search volume.
+47 | madalin-stunt-cars-2 | High-quality 3D car physics search.
+48 | powerline-io | Trending .io title.
+49 | evo-wars-io | Combat .io game with high session times.
+50 | worlds-hardest-game | High challenge/ego-bait search term.

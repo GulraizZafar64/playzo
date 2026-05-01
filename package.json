@@ -1,0 +1,29 @@
+{
+  "name": "playverse-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "node -e \"const fs=require('fs'); try{fs.rmSync('.next',{recursive:true,force:true});console.log('Removed .next');}catch(e){console.warn(e.message);} try{fs.rmSync('node_modules/.cache',{recursive:true,force:true});console.log('Removed node_modules/.cache');}catch(e){}\"",
+    "dev": "node scripts/copy-games-to-public.mjs && next dev",
+    "dev:clean": "npm run clean && npm run dev",
+    "build": "node scripts/generate-games.mjs && node scripts/copy-games-to-public.mjs && next build",
+    "build:static": "node scripts/generate-games.mjs && node scripts/copy-games-to-public.mjs && node scripts/run-static-build.mjs",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-games": "node scripts/generate-games.mjs",
+    "generate-games:remote": "node scripts/generate-games-remote.mjs",
+    "normalize-legacy-brand": "node scripts/replace-classroom-brand.mjs",
+    "prune-upload": "node scripts/prune-upload-assets.mjs"
+  },
+  "dependencies": {
+    "next": "14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.0"
+  }
+}
